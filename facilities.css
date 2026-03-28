@@ -1,0 +1,291 @@
+.facilities-hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.facilities-hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(4,9,30,0.55), rgba(4,9,30,0.3));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    gap: 16px;
+}
+
+.hero-overlay h1{
+    font-size: 72px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.hero-overlay p{
+    font-size: 20px;
+    color: rgba(255,255,255,0.82);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.fac-section{
+    display: flex;
+    align-items: stretch;
+    min-height: 600px;
+}
+
+.fac-reverse{
+    flex-direction: row-reverse;
+}
+
+.fac-img-wrap{
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.fac-img-wrap.large{
+    width: 62%;
+}
+
+.fac-img-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.6s;
+}
+
+.fac-img-wrap:hover img{
+    transform: scale(1.04);
+}
+
+.fac-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 8%;
+    background-color: white;
+}
+
+.fac-label{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: hsl(206, 40%, 32%);
+    margin-bottom: 14px;
+    display: block;
+}
+
+.fac-text h2{
+    font-size: 44px;
+    font-weight: 800;
+    color: #1a4a6b;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    line-height: 1.1;
+}
+
+.fac-text p{
+    font-size: 17px;
+    line-height: 1.9;
+    color: #444;
+    max-width: 380px;
+}
+
+.fac-full{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.fac-full img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.6s;
+}
+
+.fac-full:hover img{
+    transform: scale(1.03);
+}
+
+.fac-full-label{
+    position: absolute;
+    bottom: 50px;
+    left: 6%;
+    z-index: 1;
+}
+
+.fac-full-label .fac-label{
+    color: rgba(255,255,255,0.8);
+}
+
+.fac-full-label h2{
+    font-size: 52px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.fac-full::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(4,9,30,0.65) 0%, transparent 55%);
+}
+
+.fac-grid-section{
+    padding: 6px;
+    background-color: #f4f7fa;
+}
+
+.fac-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 420px 420px;
+    gap: 6px;
+}
+
+.fac-grid-item{
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+}
+
+.fac-grid-item.tall{
+    grid-row: span 1;
+}
+
+.fac-grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.6s;
+    filter: brightness(0.9);
+}
+
+.fac-grid-item:hover img{
+    transform: scale(1.05);
+    filter: brightness(0.75);
+}
+
+.fac-grid-label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 28px 30px;
+    background: linear-gradient(transparent, rgba(4,9,30,0.6));
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.fac-grid-item:hover .fac-grid-label{
+    opacity: 1;
+}
+
+.fac-grid-label span{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media(max-width: 900px){
+
+    .hero-overlay h1{
+        font-size: 44px;
+    }
+
+    .hero-overlay p{
+        font-size: 16px;
+    }
+
+    .fac-section{
+        flex-direction: column;
+        min-height: unset;
+    }
+
+    .fac-reverse{
+        flex-direction: column;
+    }
+
+    .fac-img-wrap.large{
+        width: 100%;
+        height: 420px;
+    }
+
+    .fac-text{
+        padding: 50px 6%;
+    }
+
+    .fac-text h2{
+        font-size: 34px;
+    }
+
+    .fac-text p{
+        max-width: 100%;
+    }
+
+    .fac-full{
+        height: 460px;
+    }
+
+    .fac-full-label h2{
+        font-size: 36px;
+    }
+
+    .fac-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 300px);
+    }
+
+}
+
+@media(max-width: 480px){
+
+    .hero-overlay h1{
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .fac-img-wrap.large{
+        height: 300px;
+    }
+
+    .fac-full{
+        height: 320px;
+    }
+
+    .fac-full-label{
+        bottom: 30px;
+    }
+
+    .fac-full-label h2{
+        font-size: 28px;
+    }
+
+    .fac-grid{
+        grid-template-rows: repeat(4, 240px);
+    }
+
+}

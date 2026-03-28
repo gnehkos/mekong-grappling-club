@@ -1,0 +1,181 @@
+.rule-page{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/img/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 130px 6% 100px;
+}
+
+.rule-page h1{
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    color: #1a4a6b;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.rule-sub{
+    text-align: center;
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 70px;
+}
+
+.rule-list{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rule-card{
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 36px 40px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.rule-card::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: hsl(206, 40%, 32%);
+    transform: scaleY(0);
+    transition: 0.3s;
+    border-radius: 0 2px 2px 0;
+}
+
+.rule-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.13);
+    border-color: hsla(206, 40%, 32%, 0.18);
+}
+
+.rule-card:hover::before{
+    transform: scaleY(1);
+}
+
+.rule-number{
+    font-size: 64px;
+    font-weight: 800;
+    color: hsla(206, 40%, 32%, 0.1);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 80px;
+    text-align: center;
+    transition: 0.3s;
+    letter-spacing: -2px;
+}
+
+.rule-card:hover .rule-number{
+    color: hsla(206, 40%, 32%, 0.2);
+}
+
+.rule-content{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex: 1;
+}
+
+.rule-icon{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: hsla(206, 40%, 32%, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.rule-icon i{
+    font-size: 20px;
+    color: hsl(206, 40%, 32%);
+    transition: 0.3s;
+}
+
+.rule-card:hover .rule-icon{
+    background-color: hsl(206, 40%, 32%);
+}
+
+.rule-card:hover .rule-icon i{
+    color: white;
+}
+
+.rule-text h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a4a6b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.rule-text p{
+    font-size: 15px;
+    line-height: 1.85;
+    color: #444;
+}
+
+@media(max-width: 700px){
+
+    .rule-page h1{
+        font-size: 36px;
+    }
+
+    .rule-card{
+        padding: 28px 24px;
+        gap: 20px;
+    }
+
+    .rule-number{
+        font-size: 44px;
+        width: 50px;
+    }
+
+    .rule-content{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+}
+
+@media(max-width: 480px){
+
+    .rule-page{
+        padding: 100px 4% 70px;
+    }
+
+    .rule-page h1{
+        font-size: 28px;
+    }
+
+    .rule-card{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .rule-number{
+        font-size: 36px;
+        width: auto;
+    }
+
+}
