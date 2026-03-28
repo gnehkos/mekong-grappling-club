@@ -110,5 +110,130 @@ nav img{
     transition: 0.5s;
 }
 
+.philo{
+    margin:auto;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/img/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+
+.philo img {
+    width: 500px;          
+    flex-shrink: 0;      
+}
 
 
+.philo-text {
+    max-width: 500px;
+}
+
+.philo h1 {
+    font-size: 70px;       
+    margin-bottom: 10px;
+    color: #1a4a6b;        
+}
+
+
+.philo p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.coachpf{
+    margin:auto;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/img/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.coachpf img{
+    width: 100%;
+}
+
+.coachpf h1{
+    text-align: center;
+    font-size: 70px;       
+    margin-top:20px;
+    margin-bottom: 10px;
+    color: #1a4a6b;       
+}
+
+.coachpf h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.coachpf p{
+    text-align: center;
+    max-width: 80%;
+    margin:auto;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.trainmethod {
+    padding: 80px 0;
+    margin: auto;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/img/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.train-col {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.train {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.train img {
+    width: 45%;
+    height: auto;          
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.train-text {
+    flex: 1;                   
+}
+
+.train-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.trainmethod h1{
+    text-align: center;
+    font-size: 70px;       
+
+    margin-bottom: 10px;
+    color: #1a4a6b;       
+}
+
+.train img{
+    width: 30%;
+    height: 66%;
+    border-radius: 10px;
+}
