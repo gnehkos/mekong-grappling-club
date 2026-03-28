@@ -1,0 +1,374 @@
+.hero-tag{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.6);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+}
+
+.text-box{
+    gap: 22px;
+}
+
+.text-box h1{
+    animation: fadeUp 0.9s ease both;
+}
+
+#highlightext{
+    animation: fadeUp 0.9s 0.15s ease both;
+}
+
+.hero-btn{
+    animation: fadeUp 0.9s 0.3s ease both;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-scroll{
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+.hero-scroll span{
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+}
+
+.scroll-line{
+    width: 1px;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+    animation: scrollPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollPulse{
+    0%, 100%{ opacity: 0.4; transform: scaleY(1); }
+    50%{ opacity: 1; transform: scaleY(1.15); }
+}
+
+.section-label{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: hsl(206, 40%, 32%);
+    margin-bottom: 12px;
+}
+
+.philo img{
+    transition: 0.5s;
+    filter: drop-shadow(0 12px 30px rgba(26,74,107,0.15));
+}
+
+.philo img:hover{
+    transform: scale(1.04) rotate(-1deg);
+    filter: drop-shadow(0 20px 40px rgba(26,74,107,0.25));
+}
+
+.philo-text .section-label{
+    display: block;
+}
+
+.coachpf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coach-img-wrap{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.coach-img-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    transition: 0.8s;
+}
+
+.coach-img-wrap:hover img{
+    transform: scale(1.03);
+}
+
+.coach-img-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(4,9,30,0.5) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.coach-content{
+    text-align: center;
+    padding: 60px 10% 80px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.coach-content .section-label{
+    display: block;
+    margin-bottom: 14px;
+}
+
+.coach-content h1{
+    font-size: 54px;
+    margin-bottom: 12px;
+    color: #1a4a6b;
+    font-weight: 800;
+}
+
+.coach-content h2{
+    font-size: 22px;
+    font-style: italic;
+    color: hsl(206, 40%, 32%);
+    margin-bottom: 28px;
+}
+
+.coach-content p{
+    font-size: 18px;
+    line-height: 1.9;
+    color: #333;
+    text-align: left;
+}
+
+.train-img-wrap{
+    width: 48%;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+}
+
+.train-img-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.6s;
+}
+
+.train-img-wrap:hover img{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.train-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: hsl(206, 40%, 32%);
+    border-bottom: 2px solid hsl(206, 40%, 32%);
+    padding-bottom: 4px;
+    transition: 0.3s;
+}
+
+.train-link i{
+    transition: 0.3s;
+}
+
+.train-link:hover{
+    color: #1a4a6b;
+    border-color: #1a4a6b;
+}
+
+.train-link:hover i{
+    transform: translateX(6px);
+}
+
+.pillars{
+    width: 100%;
+    padding: 90px 8%;
+    background-color: #1a4a6b;
+    text-align: center;
+}
+
+.pillars h1{
+    font-size: 44px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 56px;
+}
+
+.pillars .section-label{
+    color: rgba(255,255,255,0.5);
+}
+
+.pillars-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.pillar-card{
+    background-color: rgba(255,255,255,0.06);
+    border: 1.5px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 44px 32px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.pillar-card:hover{
+    background-color: rgba(255,255,255,0.12);
+    border-color: rgba(255,255,255,0.25);
+    transform: translateY(-8px);
+}
+
+.pillar-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px auto;
+    transition: 0.3s;
+}
+
+.pillar-icon i{
+    font-size: 22px;
+    color: white;
+}
+
+.pillar-card:hover .pillar-icon{
+    background-color: white;
+}
+
+.pillar-card:hover .pillar-icon i{
+    color: #1a4a6b;
+}
+
+.pillar-card h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+}
+
+.pillar-card p{
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.65);
+}
+
+.facility-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: hsl(206, 40%, 32%);
+    border-bottom: 2px solid hsl(206, 40%, 32%);
+    padding-bottom: 4px;
+    transition: 0.3s;
+}
+
+.facility-link i{
+    transition: 0.3s;
+}
+
+.facility-link:hover{
+    color: #1a4a6b;
+    border-color: #1a4a6b;
+}
+
+.facility-link:hover i{
+    transform: translateX(6px);
+}
+
+@media(max-width: 960px){
+
+    .coach-img-wrap{
+        height: 500px;
+    }
+
+    .coach-content h1{
+        font-size: 36px;
+    }
+
+    .coach-content h2{
+        font-size: 18px;
+    }
+
+    .coach-content p{
+        font-size: 16px;
+    }
+
+    .train-img-wrap{
+        width: 100%;
+    }
+
+    .pillars h1{
+        font-size: 32px;
+    }
+
+    .pillars-grid{
+        grid-template-columns: 1fr;
+        max-width: 480px;
+    }
+
+    .hero-scroll{
+        display: none;
+    }
+
+}
+
+@media(max-width: 480px){
+
+    .coach-img-wrap{
+        height: 280px;
+    }
+
+    .pillars{
+        padding: 70px 6%;
+    }
+
+    .pillars h1{
+        font-size: 26px;
+        margin-bottom: 36px;
+    }
+
+}

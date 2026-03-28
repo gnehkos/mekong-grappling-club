@@ -1,0 +1,380 @@
+.map-section{
+    width: 100%;
+    padding-top: 90px;
+}
+
+.map-header{
+    background-color: #1a4a6b;
+    text-align: center;
+    padding: 60px 6% 50px;
+}
+
+.map-header h1{
+    font-size: 54px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.map-header p{
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.5px;
+}
+
+.map-wrap{
+    width: 100%;
+    height: 520px;
+    position: relative;
+}
+
+.map-wrap iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.entrance-section{
+    width: 100%;
+    background-image: url(/img/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 90px 6% 100px;
+}
+
+.entrance-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.entrance-label{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: hsl(206, 40%, 32%);
+    margin-bottom: 14px;
+}
+
+.entrance-header h2{
+    font-size: 44px;
+    font-weight: 800;
+    color: #1a4a6b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.entrance-header p{
+    font-size: 16px;
+    color: #555;
+}
+
+.entrance-steps{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.entrance-step{
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.entrance-step:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.14);
+    border-color: hsla(206, 40%, 32%, 0.2);
+}
+
+.step-img{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.step-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+    filter: grayscale(20%);
+}
+
+.entrance-step:hover .step-img img{
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+.step-num{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: hsl(206, 40%, 32%);
+    color: white;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.step-text{
+    padding: 26px 26px 30px;
+}
+
+.step-text h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a4a6b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.step-text p{
+    font-size: 14px;
+    line-height: 1.85;
+    color: #555;
+}
+
+.contact-section{
+    width: 100%;
+    background-color: #f4f7fa;
+    padding: 90px 6% 100px;
+}
+
+.contact-header{
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.contact-header h2{
+    font-size: 44px;
+    font-weight: 800;
+    color: #1a4a6b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.contact-header p{
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    max-width: 860px;
+    margin: auto;
+}
+
+.contact-card{
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    padding: 28px 30px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contact-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(0,0,0,0.13);
+    border-color: hsla(206, 40%, 32%, 0.2);
+}
+
+.contact-card-wide{
+    grid-column: span 2;
+}
+
+.contact-icon{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: hsla(206, 40%, 32%, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.contact-icon i{
+    font-size: 20px;
+    color: hsl(206, 40%, 32%);
+    transition: 0.3s;
+}
+
+.contact-card:hover .contact-icon{
+    background-color: hsl(206, 40%, 32%);
+}
+
+.contact-card:hover .contact-icon i{
+    color: white;
+}
+
+.telegram-icon{
+    background-color: rgba(0, 136, 204, 0.1);
+}
+
+.telegram-icon i{
+    color: #0088cc;
+}
+
+.contact-card:hover .telegram-icon{
+    background-color: #0088cc;
+}
+
+.insta-icon{
+    background-color: rgba(193, 53, 132, 0.1);
+}
+
+.insta-icon i{
+    color: #c13584;
+}
+
+.contact-card:hover .insta-icon{
+    background-color: #c13584;
+}
+
+.fb-icon{
+    background-color: rgba(24, 119, 242, 0.1);
+}
+
+.fb-icon i{
+    color: #1877f2;
+}
+
+.contact-card:hover .fb-icon{
+    background-color: #1877f2;
+}
+
+.location-icon{
+    background-color: rgba(192, 57, 43, 0.1);
+}
+
+.location-icon i{
+    color: #c0392b;
+}
+
+.contact-card:hover .location-icon{
+    background-color: #c0392b;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.contact-label{
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.contact-value{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a4a6b;
+}
+
+.contact-arrow{
+    font-size: 14px;
+    color: #ccc;
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+
+.contact-card:hover .contact-arrow{
+    color: hsl(206, 40%, 32%);
+    transform: translateX(4px);
+}
+
+@media(max-width: 900px){
+
+    .entrance-steps{
+        grid-template-columns: 1fr;
+        max-width: 560px;
+    }
+
+    .map-header h1{
+        font-size: 36px;
+    }
+
+    .map-wrap{
+        height: 400px;
+    }
+
+    .entrance-header h2{
+        font-size: 34px;
+    }
+
+    .contact-header h2{
+        font-size: 34px;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card-wide{
+        grid-column: span 1;
+    }
+
+    .entrance-section{
+        padding: 70px 4% 80px;
+    }
+
+    .contact-section{
+        padding: 70px 4% 80px;
+    }
+
+}
+
+@media(max-width: 480px){
+
+    .map-header{
+        padding: 50px 4% 40px;
+    }
+
+    .map-header h1{
+        font-size: 28px;
+    }
+
+    .map-wrap{
+        height: 300px;
+    }
+
+    .entrance-header h2,
+    .contact-header h2{
+        font-size: 26px;
+    }
+
+}
