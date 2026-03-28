@@ -1,0 +1,167 @@
+.classes-page{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/img/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 130px 6% 80px;
+}
+
+.classes-page h1{
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    color: #1a4a6b;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.classes-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.class-card{
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.class-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.14);
+}
+
+.class-img{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.class-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+    filter: grayscale(20%);
+}
+
+.class-card:hover .class-img img{
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+.class-body{
+    padding: 28px 26px 32px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.class-tag{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: hsl(206, 40%, 32%);
+    margin-bottom: 10px;
+}
+
+.kids-tag{
+    color: #e07b00;
+}
+
+.womens-tag{
+    color: #b0306a;
+}
+
+.class-body h2{
+    font-size: 28px;
+    font-weight: 800;
+    color: #1a4a6b;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.class-body p{
+    font-size: 15px;
+    line-height: 1.85;
+    color: #444;
+    flex: 1;
+    margin-bottom: 28px;
+}
+
+.class-btn{
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid hsl(206, 40%, 32%);
+    color: hsl(206, 40%, 32%);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: 0.3s;
+    align-self: flex-start;
+}
+
+.class-btn:hover{
+    background-color: hsl(206, 40%, 32%);
+    color: white;
+}
+
+.kids-btn{
+    border-color: #e07b00;
+    color: #e07b00;
+}
+
+.kids-btn:hover{
+    background-color: #e07b00;
+    color: white;
+}
+
+.womens-btn{
+    border-color: #b0306a;
+    color: #b0306a;
+}
+
+.womens-btn:hover{
+    background-color: #b0306a;
+    color: white;
+}
+
+@media(max-width: 900px){
+
+    .classes-grid{
+        grid-template-columns: 1fr;
+        max-width: 560px;
+    }
+
+    .classes-page h1{
+        font-size: 36px;
+    }
+
+}
+
+@media(max-width: 480px){
+
+    .classes-page{
+        padding: 100px 4% 60px;
+    }
+
+    .class-img{
+        height: 220px;
+    }
+
+}

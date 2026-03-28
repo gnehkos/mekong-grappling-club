@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes - Mekong Grappling Club</title>
+    <link rel="icon" type="image/png" href="/img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="classes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/78fe47c082.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <img src="img/logo.png" alt="gym logo">
+        </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="classes.html">CLASSES</a></li>
+                <li><a href="price.html">PRICE</a></li>
+                <li><a href="facilities.html">FACILITIES</a></li>
+                <li><a href="gymrule.html">GYM RULE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="https://t.me/MekongGrapplingClub" class="join-btn">Join Us</a>
+            <i class="fa fa-bars" id="menuIcon" onclick="showMenu()"></i>
+        </div>
+    </nav>
+
+    <section class="classes-page">
+        <h1>Classes</h1>
+
+        <div class="classes-grid">
+
+            <div class="class-card">
+                <div class="class-img">
+                    <img src="img/regular.png" alt="No-Gi Class">
+                </div>
+                <div class="class-body">
+                    <span class="class-tag">No-Gi Jiu-Jitsu</span>
+                    <h2>Regular Class</h2>
+                    <p><b>Our regular No-Gi class is open to everyone, from complete beginners to experienced grapplers.</b> No uniform needed — just a rash guard and shorts. We focus on learning through exploration, not memorisation. Each class includes positional sparring and cooperative drilling so you develop real understanding, not just moves.</p>
+                    <a href="https://t.me/MekongGrapplingClub" class="class-btn">Join Now</a>
+                </div>
+            </div>
+
+            <div class="class-card">
+                <div class="class-img">
+                    <img src="img/kids.PNG" alt="Kids Class">
+                </div>
+                <div class="class-body">
+                    <span class="class-tag kids-tag">Kids Class</span>
+                    <h2>Kids Class</h2>
+                    <p><b>A fun, safe, and structured class designed for children to learn the basics of grappling.</b> We build confidence, discipline, and coordination through games and guided movement. Kids learn how to move their body, stay calm under pressure, and work respectfully with others — skills that go well beyond the mat.</p>
+                    <a href="https://t.me/MekongGrapplingClub" class="class-btn kids-btn">Join Now</a>
+                </div>
+            </div>
+
+            <div class="class-card">
+                <div class="class-img">
+                    <img src="img/women.jpg" alt="Women's Only Class">
+                </div>
+                <div class="class-body">
+                    <span class="class-tag womens-tag">Women's Only</span>
+                    <h2>Women's Only Class</h2>
+                    <p><b>A dedicated space for women to train in a comfortable and supportive environment.</b> Whether you're brand new to grappling or looking to sharpen your skills, this class is built around your pace. Led with the same philosophy as our regular classes — learn by doing, stay curious, and enjoy the process.</p>
+                    <a href="https://t.me/MekongGrapplingClub" class="class-btn womens-btn">Join Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <img src="/img/logo1.png" alt="Mekong Grappling Club Logo">
+            <div class="footer-contact">
+                <a href="tel:+85599853764">
+                    <span>+855 99 853 764</span>
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+                <a href="https://maps.app.goo.gl/ernvXZrnKbQ6DiQG9" target="_blank">
+                    <span>113, 12303 Street 105,<br>Phnom Penh, Cambodia</span>
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+                <a href="https://www.instagram.com/mekong.grappling.club/" target="_blank">
+                    <span>mekong.grappling.club</span>
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+            <p><b>About Us</b></p>
+            <p>Clean mats, good people, and a coach who actually cares. Mekong Grappling Club is Phnom Penh's home for No-Gi Jiu-Jitsu.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61580378297072" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/mekong.grappling.club/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://t.me/MekongGrapplingClub" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <p class="footer-credit">© 2025 Mekong Grappling Club</p>
+        </div>
+    </footer>
+
+    <script>
+        function showMenu(){
+            document.getElementById('navLinks').classList.add('open');
+        }
+        function hideMenu(){
+            document.getElementById('navLinks').classList.remove('open');
+        }
+        const currentPage = location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.nav-links ul li a').forEach(link => {
+            if(link.getAttribute('href') === currentPage){
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+.schedule-page{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/img/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 130px 1% 80px;
+}
+
+.schedule-page h1{
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    color: #1a4a6b;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.schedule-sub{
+    text-align: center;
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.schedule-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    width: 98%;
+    margin: auto;
+}
+
+.day-card{
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.day-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 14px 36px rgba(0,0,0,0.14);
+}
+
+.day-header{
+    background-color: hsl(206, 40%, 32%);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 22px 14px;
+    text-align: center;
+}
+
+.saturday .day-header{
+    background-color: #1a4a6b;
+}
+
+.class-slot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 26px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.class-slot:last-child{
+    border-bottom: none;
+}
+
+.class-slot:hover{
+    background-color: #f4f7fa;
+}
+
+.time{
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.class-type{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 16px;
+    border-radius: 20px;
+}
+
+.class-type.nogi{
+    background-color: hsla(206, 40%, 32%, 0.1);
+    color: hsl(206, 40%, 32%);
+}
+
+.class-type.kids{
+    background-color: #fff3e0;
+    color: #e07b00;
+}
+
+.class-type.womens{
+    background-color: #fce4ec;
+    color: #b0306a;
+}
+
+@media(max-width: 1000px){
+
+    .schedule-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media(max-width: 600px){
+
+    .schedule-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .schedule-page{
+        padding: 100px 4% 60px;
+    }
+
+    .schedule-page h1{
+        font-size: 34px;
+    }
+
+}
+
+@media(max-width: 380px){
+
+    .schedule-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
