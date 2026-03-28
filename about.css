@@ -101,16 +101,13 @@
 
 .coach-img-wrap{
     width: 100%;
-    height: 800px;
     position: relative;
     overflow: hidden;
 }
 
 .coach-img-wrap img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+    height: auto;
     display: block;
     transition: 0.8s;
 }
@@ -320,11 +317,7 @@
 }
 
 @media(max-width: 960px){
-
-    .coach-img-wrap{
-        height: 500px;
-    }
-
+ 
     .coach-content h1{
         font-size: 36px;
     }
@@ -357,10 +350,6 @@
 }
 
 @media(max-width: 480px){
-
-    .coach-img-wrap{
-        height: 280px;
-    }
 
     .pillars{
         padding: 70px 6%;
