@@ -1,0 +1,225 @@
+.merch-page{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/img/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 130px 6% 100px;
+}
+
+.merch-header{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.merch-label{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: hsl(206, 40%, 32%);
+    margin-bottom: 12px;
+}
+
+.merch-header h1{
+    font-size: 54px;
+    font-weight: 800;
+    color: #1a4a6b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.merch-header p{
+    font-size: 17px;
+    color: #555;
+}
+
+.merch-product{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.merch-info-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 14px;
+    padding: 28px 36px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-bottom: 60px;
+}
+
+.merch-info-bar h2{
+    font-size: 28px;
+    font-weight: 800;
+    color: #1a4a6b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.merch-info-bar .merch-tag{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: hsl(206, 40%, 32%);
+    margin-bottom: 6px;
+    display: block;
+}
+
+.merch-price-tag{
+    font-size: 42px;
+    font-weight: 800;
+    color: #1a4a6b;
+}
+
+.merch-sizes{
+    display: flex;
+    gap: 10px;
+}
+
+.size-chip{
+    padding: 8px 20px;
+    border: 2px solid hsl(206, 40%, 32%);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(206, 40%, 32%);
+    font-family: "Poppins", sans-serif;
+}
+
+.merch-order-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background-color: hsl(206, 40%, 32%);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.merch-order-btn:hover{
+    background-color: #1a4a6b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(26,74,107,0.2);
+}
+
+.merch-order-btn i{
+    font-size: 18px;
+}
+
+.color-section{
+    margin-bottom: 60px;
+}
+
+.color-title{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.color-dot{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.color-dot-blue{
+    background-color: hsl(206, 40%, 32%);
+}
+
+.color-dot-orange{
+    background-color: #e07b00;
+}
+
+.color-title h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a4a6b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.color-title-line{
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.photo-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.photo-item{
+    border-radius: 14px;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.photo-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+    filter: brightness(0.95);
+}
+
+.photo-item:hover img{
+    transform: scale(1.05);
+    filter: brightness(1);
+}
+
+@media(max-width: 900px){
+
+    .merch-header h1{
+        font-size: 36px;
+    }
+
+    .merch-info-bar{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 24px;
+    }
+
+    .photo-grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    .merch-page{
+        padding: 100px 4% 70px;
+    }
+
+    .merch-header h1{
+        font-size: 28px;
+    }
+
+    .photo-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .merch-sizes{
+        flex-wrap: wrap;
+    }
+
+}
